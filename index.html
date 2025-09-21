@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - AI-Powered Carbon Footprint Tracker</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">🌱 EcoTrack</a>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li class="nav-cta-mobile">
+                    <button class="cta-btn">Start Free Trial</button>
+                </li>
+            </ul>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Desktop CTA Button -->
+            <button class="cta-btn desktop-cta">Start Free Trial</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-element floating-1">🌿</div>
+        <div class="floating-element floating-2">♻️</div>
+        <div class="floating-element floating-3">🌍</div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Track Your Carbon Footprint with AI</h1>
+                <p>Transform your daily activities into actionable climate insights. EcoTrack uses advanced AI to help individuals and businesses achieve their sustainability goals through personalized recommendations and real-time tracking.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn-primary">Get Started Free</a>
+                    <a href="#demo" class="btn-secondary">Watch Demo</a>
+                </div>
+            </div>
+            <div class="dashboard-preview">
+                <div class="dashboard-card">
+                    <div class="metric-card">
+                        <div>
+                            <div class="metric-value" id="carbon-today">2.4</div>
+                            <div class="metric-label">kg CO₂ today</div>
+                        </div>
+                        <i class="fas fa-leaf" style="font-size: 2rem; color: var(--primary);"></i>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="metric-card">
+                        <div>
+                            <div class="metric-value" id="monthly-trend">-12%</div>
+                            <div class="metric-label">vs last month</div>
+                        </div>
+                        <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--primary);"></i>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="metric-card">
+                        <div>
+                            <div class="metric-value">847</div>
+                            <div class="metric-label">trees saved</div>
+                        </div>
+                        <i class="fas fa-tree" style="font-size: 2rem; color: var(--primary);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2 class="section-title">Powerful Features for Sustainable Living</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Insights</h3>
+                    <p>Get personalized recommendations based on your lifestyle patterns and carbon footprint analysis using advanced machine learning algorithms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Real-time Analytics</h3>
+                    <p>Track your progress with beautiful visualizations and detailed reports that show your environmental impact across different activities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Collaboration</h3>
+                    <p>Perfect for businesses and organizations looking to achieve sustainability goals together with team challenges and leaderboards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App</h3>
+                    <p>Log activities on-the-go with our intuitive mobile app that makes carbon tracking as easy as taking a photo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-friendly Marketplace</h3>
+                    <p>Discover and purchase sustainable products from our curated marketplace of eco-friendly brands and partners.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Carbon Offsetting</h3>
+                    <p>Automatically offset your carbon footprint through verified projects including reforestation and renewable energy initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="demo-section" id="demo">
+        <div class="demo-container">
+            <h2 class="section-title" style="color: white;">Try Our Carbon Calculator</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">See how your daily activities impact the environment in real-time</p>
+            
+            <div class="activity-logger">
+                <div class="activity-form">
+                    <div class="form-group">
+                        <select id="activity-type">
+                            <option value="">Select Activity</option>
+                            <option value="transport">Transportation</option>
+                            <option value="energy">Energy Use</option>
+                            <option value="food">Food & Diet</option>
+                            <option value="shopping">Shopping</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="activity-amount" placeholder="Amount" min="0">
+                    </div>
+                    <div class="form-group">
+                        <select id="activity-unit">
+                            <option value="km">Kilometers</option>
+                            <option value="kwh">kWh</option>
+                            <option value="meals">Meals</option>
+                            <option value="items">Items</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn-primary" onclick="calculateCarbon()">Calculate Impact</button>
+                
+                <div class="carbon-display" id="carbon-result" style="display: none;">
+                    <span class="carbon-value" id="carbon-amount">0</span>
+                    <span>kg CO₂ equivalent</span>
+                    <div id="carbon-tip" style="margin-top: 1rem; font-size: 1rem;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="pricing-container">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #666;">Start your sustainability journey today</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Personal</h3>
+                    <div class="price">Free</div>
+                    <p>Perfect for individuals starting their eco-journey</p>
+                    <ul style="text-align: left; margin: 2rem 0;">
+                        <li>✅ Basic carbon tracking</li>
+                        <li>✅ 3 activity categories</li>
+                        <li>✅ Monthly reports</li>
+                        <li>✅ Mobile app access</li>
+                    </ul>
+                    <button class="btn-primary">Get Started</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>Pro</h3>
+                    <div class="price">$9<span style="font-size: 1rem;">/month</span></div>
+                    <p>Advanced features for serious eco-warriors</p>
+                    <ul style="text-align: left; margin: 2rem 0;">
+                        <li>✅ Unlimited tracking</li>
+                        <li>✅ AI recommendations</li>
+                        <li>✅ Real-time analytics</li>
+                        <li>✅ Carbon offsetting</li>
+                        <li>✅ Priority support</li>
+                    </ul>
+                    <button class="btn-primary" style="background: white; color: var(--primary);">Choose Pro</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Business</h3>
+                    <div class="price">$29<span style="font-size: 1rem;">/month</span></div>
+                    <p>Complete solution for organizations</p>
+                    <ul style="text-align: left; margin: 2rem 0;">
+                        <li>✅ Team management</li>
+                        <li>✅ Custom reporting</li>
+                        <li>✅ API access</li>
+                        <li>✅ White-label options</li>
+                        <li>✅ Dedicated support</li>
+                    </ul>
+                    <button class="btn-primary">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <div>
+                    <h3 style="margin-bottom: 1rem;">🌱 EcoTrack</h3>
+                    <p>Making sustainability simple, personal, and impactful through AI-powered carbon tracking.</p>
+                </div>
+                <div>
+                    <h4>Product</h4>
+                    <ul style="list-style: none; margin-top: 1rem;">
+                        <li><a href="#" style="color: #ccc; text-decoration: none;">Features</a></li>
+                        <li><a href="#" style="color: #ccc; text-decoration: none;">Pricing</a></li>
+                        <li><a href="#" style="color: #ccc; text-decoration: none;">API</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul style="list-style: none; margin-top: 1rem;">
+                        <li><a href="#" style="color: #ccc; text-decoration: none;">About</a></li>
+                        <li><a href="#" style="color: #ccc; text-decoration: none;">Blog</a></li>
+                        <li><a href="#" style="color: #ccc; text-decoration: none;">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <a href="#" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #ccc; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #333; padding-top: 2rem; text-align: center;">
+                <p>&copy; 2025 EcoTrack. All rights reserved. | Built for a sustainable future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
